@@ -1,10 +1,8 @@
-<div class="content">
-
-# eurodeer_db_report
+# eurodeer db report
 
 ## main schema
 
-#### The schema "main" is the place where all the core information of the main objects are stored: data from sensors (at the moment, GPS, VHF, activity), sensors, animals, studies, research groups.
+The schema "main" is the place where all the core information of the main objects are stored: data from sensors (at the moment, GPS, VHF, activity), sensors, animals, studies, research groups.
 
 <table class="min">
 
@@ -21644,7 +21642,7 @@
 
 ## tools schema
 
-#### The schema "tools" hosts all the functions and tools that are used throughout the database to manage, massage, analyse and query data.
+The schema "tools" hosts all the functions and tools that are used throughout the database to manage, massage, analyse and query data.
 
 <table class="min">
 
@@ -21744,7 +21742,7 @@
 
 ## env_data schema
 
-#### The schema "env_data" hosts all the (static) environmental and socio economic layers. Raster time series are stored in separated schemas (env_data_ts).
+The schema "env_data" hosts all the (static) environmental and socio economic layers. Raster time series are stored in separated schemas (env_data_ts).
 
 <table class="min">
 
@@ -23464,7 +23462,7 @@
 
 ## env_data_ts schema
 
-#### the schema "env_data_ts" stores environmental layers in form of raster time series.
+The schema "env_data_ts" stores environmental layers in form of raster time series.
 
 <table class="min">
 
@@ -24164,7 +24162,7 @@
 
 ## lu_tables schema
 
-#### The schema "lu_tables" is where the look up tables (lu_tables) are stored. These tables store the list and the description of codes referenced by other tables in the database and are a kind of valid domain for specific fields.
+The schema "lu_tables" is where the look up tables (lu_tables) are stored. These tables store the list and the description of codes referenced by other tables in the database and are a kind of valid domain for specific fields.
 
 <table class="min">
 
@@ -25608,7 +25606,7 @@
 
 ## analysis schema
 
-#### The schema "analysis" stores the results of analysis (home range, trajectories, and statistics).
+The schema "analysis" stores the results of analysis (home range, trajectories, and statistics).
 
 <table class="min">
 
@@ -30626,4 +30624,4 @@
 
 </table>
 
-</div>
+
