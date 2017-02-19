@@ -1,5 +1,5 @@
 mkdir <-
-function(dirx='/media/jedgroev/DATA/JOHANNES_DATA/PhD/My_Papers/Paper_SAM_EuroDEER/HRE_animals/results',x, mvtr = mv_tr, setdir=TRUE){
+function(dirx=getwd(),x, mvtr = mv_tr, setdir=TRUE){
 # This function creates directories from a certain start directory (here results). mvtr refers to the fact if a proportion of missing values is removed and setdir if the new directory is accessed. 
 
 # dirx is the directory from where to start 
