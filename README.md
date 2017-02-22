@@ -4,6 +4,7 @@ This github page includes all scripts that were created for the application of S
 ## Following scripts are included
 ### SAM
 * **seqdef2.R** 
+This sequence definition includes all the important parameters that need to be set to generate our trees.
 * **plotseq.R** 	
 Plot reordered sequences. 
 * **SAM.R** 	
