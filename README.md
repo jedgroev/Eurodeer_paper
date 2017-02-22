@@ -4,6 +4,7 @@ This github page includes all scripts that were created for the application of S
 ## Following scripts are included
 ### SAM
 * **seqdef2.R**
+
 This sequence definition includes all the important parameters that need to be set to generate our trees.
 * **plotseq.R** 	
 Plots the sequences according to the order of the labels after clustering.
@@ -19,7 +20,7 @@ Bootstrap function
 Parallel version of bootstrap function
 
 ### Colors
-* **addalpha.R** 
+* **addalpha.R**
 Add transparency to colors
 * **cole.R**
 Plot colors to explore their visibility when combined (mixed randomly or ordered). 
