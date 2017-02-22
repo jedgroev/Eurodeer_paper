@@ -6,25 +6,25 @@ This github page includes all scripts that were created for the application of S
 * **seqdef2.R** 
 This sequence definition includes all the important parameters that need to be set to generate our trees.
 * **plotseq.R** 	
-Plot reordered sequences. 
+Plots the sequences according to the order of the labels after clustering.
 * **SAM.R** 	
-General script to plot trees. 
+General function to plot trees (includes the former two functions: seqdef2.R and plotseq.R). 
 * **SAMext.R** (to be improved)	
-Extended script to plot trees.
+Extended function to plot trees.
 
 ### Bootstrapping
 * **jboot.R** 	
-Bootstrap script
+Bootstrap function
 * **parjboot.R** 	
-Parallel version of bootstrap script
+Parallel version of bootstrap function
 
 ### Colors
 * **addalpha.R** 
 Add transparency to colors
 * **cole.R**
-Plot colors to explore their visibility when combined. 
+Plot colors to explore their visibility when combined (mixed randomly or ordered). 
 * **color.scales.R** (to be improved)	
-Different nice combinations of colors. 
+Different nice color scales. 
 * **darklight.R** (to be improved - sometimes error when 'darken' is used)	
 Make colors slightly darker or lighter. 
 
