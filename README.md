@@ -3,7 +3,7 @@ This github page includes all scripts that were created for the application of S
 
 ## Following scripts are included
 ### SAM
-* **seqdef2.R** 
+* **seqdef2.R**
 This sequence definition includes all the important parameters that need to be set to generate our trees.
 * **plotseq.R** 	
 Plots the sequences according to the order of the labels after clustering.
