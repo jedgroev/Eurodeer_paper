@@ -19,6 +19,8 @@ Bootstrap function
 Parallel version of bootstrap function
 
 ### Colors
+* **gradient.R**
+Add a gradient color scale to a plot in upperleft of upperright corner of the plot window. 
 * **addalpha.R**    
 Add transparency to colors.
 * **cole.R**    
