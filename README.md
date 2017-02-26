@@ -44,7 +44,7 @@ Impute missing values (biological meaning).
 * **impute_nd.R**     
 Impute nodata (no biological meaning).  
 
-### Others
+### Varia
 * **mkdir.R** 	
 * **roundUp.R**	
 * **varmax.R** 	   
