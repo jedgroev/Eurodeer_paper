@@ -1,5 +1,4 @@
-glegend <-
-function(x,y,w,w_minmax=NULL,pos=NULL,dist=c(0.1,0.1),place='upperright',len=0.35,tdist=0.04,labels=NULL,title=NULL,colors='black',alpha=1) {
+glegend <-function(x,y,w,w_minmax=NULL,pos=NULL,dist=c(0.1,0.1),place='upperright',len=0.35,tdist=0.04,labels=NULL,title=NULL,tdisttitle=0.04,colors='black',alpha=1, font=1) {
 # use this functions to add a legend for lines with a gradient 
 # x = x-axis values
 # y = y-axis values
@@ -56,7 +55,7 @@ pos <- c(pos1,pos2)
 lwdleg <- seq(w_min,w_max, (w_max-w_min)/99) # line widths 
 end <- pos[1] # end position on x axis  
 start <- end - (max(x)*len) # start position on x axis 
-xpos <- seq(start, end , (end-start)/(length(x)-1)) # x values  
+xpos <- seq(start, end , (end-start)/(length(lwdleg)-1)) # x values  
 ypos <- rep(pos[2],length(xpos)) # y values 
 
 # if there is only one color make a vector of it with length of argument x
@@ -66,8 +65,8 @@ colors <- rep(colors, length(lwdleg))
 # if there is only one transparency level make a vector of it with length of argument x
 if(length(alpha) == 1){
 alpha <- rep(alpha, length(lwdleg))
-}      
-      
+}
+
 # plot legend 
 for (k in 1:length(lwdleg)){
 lines(xpos[k:(k+1)], ypos[k:(k+1)], lwd=lwdleg[k], col=addalpha(colors[k],alpha[k]))
@@ -75,16 +74,16 @@ lines(xpos[k:(k+1)], ypos[k:(k+1)], lwd=lwdleg[k], col=addalpha(colors[k],alpha[
 
 # add title 
 if(length(title) != 0){ # if there is a title plot title 
-text(sum(start,end)/2,pos[2]+(max(y)*tdist),title, xpd=NA,cex=1)
+text(sum(start,end)/2,pos[2]+(max(y)*tdisttitle),title, xpd=NA,cex=1, font=font)
 } 
 
 # add labels 
 if(length(labels) == 0){
-text(start,pos[2]+(max(y)*tdist),round(min(w),2), xpd=NA,cex=1)
-text(end,pos[2]+(max(y)*tdist),round(max(w),2), xpd=NA,cex=1)
+text(start,pos[2]+(max(y)*tdist),round(min(w),2), xpd=NA,cex=0.9)
+text(end,pos[2]+(max(y)*tdist),round(max(w),2), xpd=NA,cex=0.9)
 } else {if(length(labels) != 0){
-text(start,pos[2]+(max(y)*tdist),min(labels), xpd=NA)
-text(end,pos[2]+(max(y)*tdist),max(labels), xpd=NA)
+text(start,pos[2]+(max(y)*tdist),min(labels), xpd=NA, cex=0.9)
+text(end,pos[2]+(max(y)*tdist),max(labels), xpd=NA, cex=0.9)
 }}
 
 # EXAMPLE 1
