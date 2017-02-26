@@ -22,14 +22,6 @@ apply(sapply(col, col2rgb)/255, 2,
                     function(x) 
                     rgb(x[1], x[2], x[3], alpha=alpha))  
 }
-# if there is only one color make a vector of it with length of argument x
-if(length(colors) == 1){
-colors <- rep(colors, length(x))
-}
-# if there is only one transparency level make a vector of it with length of argument x
-if(length(alpha) == 1){
-alpha <- rep(alpha, length(x))
-}
 
 # rescaling w (necessary when the values of w are very small or big) and calculate min and max value
 if (length(w_minmax) != 0){
@@ -67,6 +59,15 @@ start <- end - (max(x)*len) # start position on x axis
 xpos <- seq(start, end , (end-start)/(length(x)-1)) # x values  
 ypos <- rep(pos[2],length(xpos)) # y values 
 
+# if there is only one color make a vector of it with length of argument x
+if(length(colors) == 1){
+colors <- rep(colors, length(lwdleg))
+}
+# if there is only one transparency level make a vector of it with length of argument x
+if(length(alpha) == 1){
+alpha <- rep(alpha, length(lwdleg))
+}      
+      
 # plot legend 
 for (k in 1:length(lwdleg)){
 lines(xpos[k:(k+1)], ypos[k:(k+1)], lwd=lwdleg[k], col=addalpha(colors[k],alpha[k]))
