@@ -21,7 +21,7 @@ Parallel version of bootstrap function
 ### plots 
 * **fittedSpline.R**  
 Function to plot fitted splines.
-* **glines.R** (gradient lines)
+* **glines.R** (gradient lines)   
 Function to plot lines with decreasing and increasing width.
 * **glegend.R**    
 Function to plot the legend of glines. 
@@ -31,7 +31,7 @@ Function to add a color gradient legend within plotting window.
 ### Colors
 * **addalpha.R**    
 Add transparency to colors.
-* **cole.R** (color explorer)    
+* **cole.R** (color explorer)      
 Plot colors to explore their visibility when combined (mixed randomly or ordered). 
 * **color.scales.R** (to be improved)   
 Different nice color scales.
