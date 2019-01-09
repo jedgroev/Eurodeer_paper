@@ -1,5 +1,4 @@
-cole <- function(x,y, random = TRUE, type= TRUE)  
-{ 
+cole <- function(x,y, random = TRUE, type= TRUE)  { 
 # x = vector of colors 
 # y = how many times colors are repeated
 # random = are the colors plotted randomly (T) or not (F)
