@@ -24,7 +24,6 @@ dims=480/72*res2
   # EXAMPLE
   # x <- 1:10
   # y <- 1:10
-  # plot(x,y)
   # export(func=plot(x,y),'test',type='pdf')
   # export(func=plot(x,y),'test',type='tif')
   # export(func=plot(x,y),'test',type='png')
